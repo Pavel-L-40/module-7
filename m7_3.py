@@ -25,7 +25,7 @@ class WordsFinder:
             for num in range(len(dict_all_words[name])):
                 if word == dict_all_words[name][num].lower():
                     dict_ = {}
-                    dict_[name] = num
+                    dict_[name] = num + 1
                     return dict_
 
     def count(self, word):
